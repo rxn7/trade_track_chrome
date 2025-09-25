@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "TrackTrade",
+    "description": "Track your old CS:GO/CS2 trades",
+    "version": "1.0.0",
+    "action": {},
+    "content_scripts": [
+        {
+            "world": "MAIN",
+            "matches": ["https://steamcommunity.com/id/*/tradehistory*"],
+            "js": ["src/content/index.js"],
+            "run_at": "document_idle"
+        }
+    ],
+    "permissions": []
+}

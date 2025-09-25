@@ -1,0 +1,21 @@
+{
+  "name": "trade_track_chrome",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [],
+  "scripts": {
+    "clean": "shx rm -rf dist",
+    "compile": "npx tsc",
+    "copyAssets": "shx cp manifest.json dist",
+    "build": "npm run clean && npm run compile && npm run copyAssets"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chrome": "^0.1.12",
+    "shx": "^0.4.0",
+    "typescript": "^5.9.2"
+  }
+}
